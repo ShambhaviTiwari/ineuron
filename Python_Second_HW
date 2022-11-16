@@ -235,77 +235,120 @@ t1.add('Shambhavi') - this is not
 
 Q43. Can two tuple be appended. If yes, write a code for it. If not, why?
 
+Answer : t1 = (1,2,3)
+t2 = (3,4,6)
+print(t1+t2) => (1,2,3,3,4,6)
 Q44. Take a tuple as an input and print the count of elements in it.
-
+Answer: tup = tuple(input("Enter space separated values:").split())
+print(len(tup))
 Q45. What are sets in Python?
-
+Answer : Set is a sequential data structure which contains only unique elements.
 Q46. How can you create a set?
+
+Answer: set1 = set()
 
 Q47. Create a set and add "iNeuron" in your set.
 
-Q48. Try to add multiple values using add() function.
+Answer: set1 = set()
+set1.add("iNeuron")
 
+Q48. Try to add multiple values using add() function.
+Answer:
+for i in range(0,3):
+    set1.add(i)
+    
+print(set1)
+
+you can also take input from user and add those elemenst using a loop
 Q49. How is update() different from add()?
+Answer: update() -> adds a list / ietratable object of elements
+add() -> adds individual elements
 
 Q50. What is clear() in sets?
-
+Answer: clears the elements in the set 
 Q51. What is frozen set?
-
+Answer: frozenset is a immutable set.
 Q52. How is frozen set different from set?
-
+Answer: In a frozen set we cannot update elements unlike in a set.
 Q53. What is union() in sets? Explain via code.
-
+Answer: Union in sets is a cummulation of all elements in a set.
 Q54. What is intersection() in sets? Explain via code.
-
-Q55. What is dictionary ibn Python?
-
+Answer: Intersection contains only common elements of both the sets.
+Q55. What is dictionary in Python?
+Answer: Dictionary is a key value pair data structure , example: {1: 'Africa'}
 Q56. How is dictionary different from all other data structures.
-
+Answer: All other data structures are sequential in nature and can be accessed using indices as well, which is not the case with dictionary.
 Q57. How can we delare a dictionary in Python?
-
+Answer: dict1 = {}
 Q58. What will the output of the following?
 
 var = {}
 print(type(var))
+
+Answer: Dictionary
 Q59. How can we add an element in a dictionary?
-
+Answer: We can add an element in a set using keys.
+Example: d{'A'} = 'One'
 Q60. Create a dictionary and access all the values in that dictionary.
-
+Answer: dict1 = {'Name' : 'Shambhavi','Age': 23,'State': 'Gujarat'}
+for k,v in dict1.items():
+    print("Key is ", k ,"and value is ",v)
 Q61. Create a nested dictionary and access all the element in the inner dictionary.
-
+Answer: dict1 = {'Name' : 'Shambhavi','Age': 23,'State': 'Gujarat','Marks':{'Maths':90,'English':82}}
+print(dict1['Marks']['Maths']) 
+or
+for k,v in dict1['Marks'].items():
+    print(k,v)
 Q62. What is the use of get() function?
-
+Answer: 
 Q63. What is the use of items() function?
-
+Answer: Items creates a view of key and values present in dictionary.
 Q64. What is the use of pop() function?
-
+Answer: list.pop(index), dict.pop(index)
+Helps in popping the elements at the given index
 Q65. What is the use of popitems() function?
-
+Answer: x.popitem() removes the last inserted element in dictionary
 Q66. What is the use of keys() function?
-
+Answer: Gives a list of keys
 Q67. What is the use of values() function?
-
+Answer: Gives a list of values
 Q68. What are loops in Python?
-
+Answer: Loops help in iterating elements 
 Q69. How many type of loop are there in Python?
-
+Answer: for and while
 Q70. What is the difference between for and while loops?
-
+Answer: while runs till the condition gets failed and for loop runs according to the number of times.
 Q71. What is the use of continue statement?
-
+Answer: Skips the iteration  according to the condition satisfied.
 Q72. What is the use of break statement?
-
+Answer: Break statement breaks the loop when condition is met.
 Q73. What is the use of pass statement?
-
+Answer: pass statement is used to pass a particular loop or conditional case when there isn't anything to pass.
 Q74. What is the use of range() function?
-
+Answer: Range is used to generate numbers according to the start ,end and step provided in it.
 Q75. How can you loop over a dictionary?
-
+Answer:
+for k,v in dict1.items():
+    print("Key is ", k ,"and value is ",v)
 Coding problems
 Q76. Write a Python program to find the factorial of a given number.
+Answer:
+def fact_num(num1 = 1):
+    if num1==0 or num1==1:
+        return 1 
+    fact = 1
+    for i in range(num1,1,-1):
+        fact = fact*i
+    return fact
+r = fact_num()
+print(r)
+
 
 Q77. Write a Python program to calculate the simple interest. Formula to calculate simple interest is SI = (PRT)/100
-
+Answer:
+def simple_interest(P,R,T):
+    SI = P*R*T/100
+    return SI
 Q78. Write a Python program to calculate the compound interest. Formula of compound interest is A = P(1+ R/100)^t.
 
 Q79. Write a Python program to check if a number is prime or not.
