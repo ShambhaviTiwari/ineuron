@@ -350,26 +350,112 @@ def simple_interest(P,R,T):
     SI = P*R*T/100
     return SI
 Q78. Write a Python program to calculate the compound interest. Formula of compound interest is A = P(1+ R/100)^t.
-
+Answer:
+def compound_interest(P,R,T):
+    SI = P*((1+R/100)**T)
+    return SI
+b = compound_interest(100,5,3)
+print(b)
 Q79. Write a Python program to check if a number is prime or not.
+Answer:
+def prime_number(num):
+    count = 0
+    for i in range(1,num):
+        
+        if num%i==0:
+            count = count + 1
+    
+    if count<2:
+        return 'prime'
+    else:
+        return 'not prime'
+print(prime_number(4))
 
 Q80. Write a Python program to check Armstrong Number.
+Answer:
+#Armstrong number
+def arm_number(num):
+    temp = num
+    sum = 0
+    while temp>0:
+        digit = temp%10
+        sum = sum + (digit)**3
+        temp = temp//10
+    
+    if sum == num:
+        return 'armstrong number'
+    else:
+        return 'not' 
+print(arm_number(153))
 
 Q81. Write a Python program to find the n-th Fibonacci Number.
+Answer:
+def nth_fibbo(n):
+    a = 0
+    b = 1
+    if n==0:
+        return 0
+    elif n ==1:
+        return b
+    else:
+
+        for i in range(1,n):
+            c = a+b
+            a = b
+            b = c
+        return b
+print(nth_fibbo(9))
 
 Q82. Write a Python program to interchange the first and last element in a list.
+Answer:
+#interchange first and last element of a list
+ll = [1,2,3,4]
+temp = ll[0]
+ll[0] = ll[len(ll)-1]
+ll[len(ll)-1] = temp
+print(ll)
 
 Q83. Write a Python program to swap two elements in a list.
+Answer:
+#interchange first and last element of a list
+ll = [1,2,3,4]
+temp = ll[0]
+ll[0] = ll[len(ll)-1]
+ll[len(ll)-1] = temp
+print(ll)
 
 Q84. Write a Python program to find N largest element from a list.
-
+Answer:
+#largest in a list
+print(max(ll))
 Q85. Write a Python program to find cumulative sum of a list.
-
+Answer:
+#sum of list elements
+print(sum(ll))
 Q86. Write a Python program to check if a string is palindrome or not.
+Answer:
+str1 = "hooh"
+rev = str1[-1::-1]
+if str1==rev:
+    print('palindrome')
 
 Q87. Write a Python program to remove i'th element from a string.
-
+Answer:
+news= ""
+num =2 
+for i in range(0,len(string)):
+    if i!=num:
+        news = news+string[i]
+print(news)
 Q88. Write a Python program to check if a substring is present in a given string.
+Answer:
+#check if substring present in string
+string = "hello"
+substr= "hell"
+if substr in string:
+    print(substr)
+    print("yes")
+
 
 Q89. Write a Python program to find words which are greater than given length k.
 
