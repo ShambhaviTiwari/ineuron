@@ -458,15 +458,38 @@ if substr in string:
 
 
 Q89. Write a Python program to find words which are greater than given length k.
-Answer:
+Answer:#find strings greater than length k
+l_s = ['hello','world','I','am','trying']
+k = 3
+l_f = []
+for i in l_s:
+    if len(i)>k:
+        l_f.append(i)
+print(l_f)
 Q90. Write a Python program to extract unquire dictionary values.
-
+Answer:
+#Extract unique dictionary values
+dict_input = {
+    'name':'Shambhavi',
+    'name1':'Shah'
+    ,'name2':'Shah'
+}
+print(set(dict_input.values()))
 Q91. Write a Python program to merge two dictionary.
-
+Answer:
+#merge two dictionaries
+dict_1 = {'name':'Shambhavi'}
+dict_2 = {'lastname':'Tiwari'}
+dict_3 = {'nickname':'Shambhu'}
+dict_1.update(dict_2)
+print(dict_1)
 Q92. Write a Python program to convert a list of tuples into dictionary.
 
 Input : [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
 Output : {'Sachin': 10, 'MSD': 7, 'Kohli': 18, 'Rohit': 45}
+Answer:
+i = dict(Input)
+print(i)
 Q93. Write a Python program to create a list of tuples from given list having number and its cube in each tuple.
 
 Input: list = [9, 5, 6]
