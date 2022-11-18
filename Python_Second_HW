@@ -494,14 +494,46 @@ Q93. Write a Python program to create a list of tuples from given list having nu
 
 Input: list = [9, 5, 6]
 Output: [(9, 729), (5, 125), (6, 216)]
+Answer:
+list1 = [9,5,6]
+o_l = []
+for i in list1:
+    c = i**3
+    tup = (i,c)
+    o_l.append(tup)
+print(o_l)
 Q94. Write a Python program to get all combinations of 2 tuples.
 
 Input : test_tuple1 = (7, 2), test_tuple2 = (7, 8)
 Output : [(7, 7), (7, 8), (2, 7), (2, 8), (7, 7), (7, 2), (8, 7), (8, 2)]
+Answer:
+test_tuple1 = (7, 2)
+test_tuple2 = (7, 8) 
+o = []
+for i in range(0,len(test_tuple1)):
+    for j in range(0,len(test_tuple2)):
+        tup = (test_tuple1[i],test_tuple1[j])
+        o.append(tup)
+        tup1 =  (test_tuple2[i],test_tuple2[j])
+        o.append(tup1)
+print(o)
 Q95. Write a Python program to sort a list of tuples by second item.
 
 Input : [('for', 24), ('Geeks', 8), ('Geeks', 30)] 
 Output : [('Geeks', 8), ('for', 24), ('Geeks', 30)]
+Answer:
+#sort a list of tuples by second element
+inp_l = [('for', 24), ('Geeks', 8), ('Geeks', 30)] 
+inp_l.sort(key = lambda x:x[1])
+print(inp_l)
+# or
+for i in range(0,len(inp_l)):
+    for j in range(0,len(inp_l)-1):
+        if inp_l[j+1][1]< inp_l[j][1]:
+            temp = inp_l[j+1]
+            inp_l[j+1] = inp_l[j]
+            inp_l[j] = temp
+print(inp_l)
 Q96. Write a python program to print below pattern.
 
 * 
@@ -509,6 +541,11 @@ Q96. Write a python program to print below pattern.
 * * * 
 * * * * 
 * * * * * 
+Answer:
+for i in range(0,4):
+    for j in range(0,i+1):
+        print("* ",end= "")
+    print()
 Q97. Write a python program to print below pattern.
 
     *
@@ -516,6 +553,8 @@ Q97. Write a python program to print below pattern.
   ***
  ****
 *****
+Answer:
+
 Q98. Write a python program to print below pattern.
 
     * 
@@ -523,6 +562,8 @@ Q98. Write a python program to print below pattern.
   * * * 
  * * * * 
 * * * * * 
+Answer:
+
 Q99. Write a python program to print below pattern.
 
 1 
@@ -530,6 +571,14 @@ Q99. Write a python program to print below pattern.
 1 2 3 
 1 2 3 4 
 1 2 3 4 5
+answer:
+#number pyramid,1 ,12... 
+for i in range(1,6):
+    for j in range(1,i):
+        
+        print(j,end="")
+        
+    print()
 Q100. Write a python program to print below pattern.
 
 A 
@@ -537,3 +586,11 @@ B B
 C C C 
 D D D D 
 E E E E E 
+Answer:
+#number pyramid,1 ,12... 
+for i in range(1,6):
+    for j in range(1,i):
+        
+        print(j,end="")
+        
+    print()
