@@ -563,7 +563,14 @@ Q98. Write a python program to print below pattern.
  * * * * 
 * * * * * 
 Answer:
-
+N = 5
+for i in range(0,N):
+    for j in range(0,N-i-1):
+        print(" ",end = "")
+    for k in range(0,i):
+        print("*",end = "")
+    print()
+   
 Q99. Write a python program to print below pattern.
 
 1 
