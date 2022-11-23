@@ -9,16 +9,23 @@ Q2. Where does an inheritance search look for an attribute?
 Answer:
 First it looks at the instance object, then at the class which the instance is created from and then it's superclasses.
 Q3. How do you distinguish between a class object and an instance object?
-Answer:
+Answer: Class object is defined for the entirety of the class and instance object is the one which 
+can be accessed using self and is declared in the constructor of a class.
 Q4. What makes the first argument in a class’s method function special?
-
+Answer:
+self is the first argumnet in a class's method and it is special as it is a pointer to the class.
 Q5. What is the purpose of the init method?
-
+Answer: Intializes the object's attributes.
 Q6. What is the process for creating a class instance?
-
+Answer: class_name(arg a,arg b)
 Q7. What is the process for creating a class?
-
+class_name(arg_a,arg_b):
+  def __init__(self,arg_a , arg_b):
+    self.arg_a = arg_a
+    self.arg_b = arg_b
+    
 Q8. How would you define the superclasses of a class?
+Answer:
 
 Q9. What is the relationship between classes and modules?
 
