@@ -25,20 +25,30 @@ class_name(arg_a,arg_b):
     self.arg_b = arg_b
     
 Q8. How would you define the superclasses of a class?
-Answer:
+Answer:superclass of a class is the one which gives the functions to inherits.
 
 Q9. What is the relationship between classes and modules?
-
+Answer: Module is teh collection of classes, functions and variables.
 Q10. How do you make instances and classes?
-
+Answer:
+class_name(arg_a,arg_b):
+  def __init__(self,arg_a , arg_b):
+    self.arg_a = arg_a
+    self.arg_b = arg_b
+ obj_name = class_name(a,b)
 Q11. Where and how should be class attributes created?
-
+Answer: Class attributes should be created in the class itself.
 Q12. Where and how are instance attributes created?
-
+Answer: instance attributes are declared in the constructor __init__.
 Q13. What does the term "self" in a Python class mean?
-
+Answer: Self is a pointer to the current instance of a class.
 Q14. How does a Python class handle operator overloading?
-
+Answer: Done by creating functions accordingky
+It is handled as follows:
+def __add__(str a , str b):
+....
+def__add__( a , b):
+....
 Q15. When do you consider allowing operator overloading of your classes?
 
 Q16. What is the most popular form of operator overloading?
