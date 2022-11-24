@@ -65,33 +65,44 @@ applications:
 Q19. What happens if you don't do something extra to treat an exception?
 Answer: An error occurs and stops the code.
 Q20. What are your options for recovering from an exception in your script?
-
+Answer:
+1) try except blocks
+2) else block in try except
+3) finally block after try except
 Q21. Describe two methods for triggering exceptions in your script.
-
+Answer: 1)Using try block
+2) Using raise, to raise an exception
 Q22. Identify two methods for specifying actions to be executed at termination time, regardless of whether or not an exception exists.
-
+Answer:else and finally
 Q23. What is the purpose of the try statement?
-
+Answer : To try a piece of risky code which can cause error to the program and stop the execution.
 Q24. What are the two most popular try statement variations?
-
+Answer: Try/except and try/except with else block.
 Q25. What is the purpose of the raise statement?
-
+Answer: To raise an exception, by inserting a custom msg to it.
 Q26. What does the assert statement do, and what other statement is it like?
-
+Answer: Assert helps in checking whether lhs is equals to rhs.
+Assert helps in debugging code.
 Q27. What is the purpose of the with/as argument, and what other statement is it like?
-
+Answer: with/as argumnet is a replacement of try /catch . It ensures that you do not leave any resource open.
 Q28. What are *args, **kwargs?
-
+Answer: *args(used for giving as many argumnets) and **kwargs(used for giving key value paired arguments) is used for input of arguments in a function
 Q29. How can I pass optional or keyword parameters from one function to another?
-
+Answer: Using default parameters.
 Q30. What are Lambda Functions?
-
+Answer : lambda functions are ananymous functions,the ones which do not need the def keyword to define the function and directly deal with the exceution of the same.
 Q31. Explain Inheritance in Python with an example?
+Answer: class Car():
+          -----
+          class Tata(Car):
+          ------
 
-Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of class C, which version gets invoked?
-
+Q32. Suppose class C inherits from classes A and B as class C(A,B).
+Classes A and B both have their own versions of method func(). If we call func() from an object of class C, which version gets invoked?
+Answer: func() will be of A as declared first.
 Q33. Which methods/functions do we use to determine the type of instance and inheritance?
-
+Answer: isintance() and issubclass()
 Q34.Explain the use of the 'nonlocal' keyword in Python.
-
+Answer: Non local keyword is used in nested functions where the variable should not belong to an inner function.
 Q35. What is the global keyword?
+Ansswer: Defined outside the function this variable is used both inside and outside the function.
