@@ -55,8 +55,10 @@ Answer: When the same operator performs different operations, like + performs ad
 Q16. What is the most popular form of operator overloading?
 Answer: Addition
 Q17. What are the two most important concepts to grasp in order to comprehend Python OOP code?
-Answer: 
+Answer:Inheritance and Polymorphism
 Q18. Describe three applications for exception processing.
+Answer:
+To proceed code without stopping for errors
 
 Q19. What happens if you don't do something extra to treat an exception?
 Answer: An error occurs and stops the code.
