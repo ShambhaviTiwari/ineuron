@@ -57,9 +57,11 @@ Answer: Addition
 Q17. What are the two most important concepts to grasp in order to comprehend Python OOP code?
 Answer:Inheritance and Polymorphism
 Q18. Describe three applications for exception processing.
-Answer:
-To proceed code without stopping for errors
-
+Answer:To proceed code without stopping for errors
+applications:
+1) to encounter or solve list index error
+2) to encounter or solve zero division error
+3) to encounter or solve arithmetic error
 Q19. What happens if you don't do something extra to treat an exception?
 Answer: An error occurs and stops the code.
 Q20. What are your options for recovering from an exception in your script?
