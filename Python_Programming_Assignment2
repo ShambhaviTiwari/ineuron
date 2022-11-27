@@ -1,0 +1,9 @@
+1. Write a Python program to convert kilometers to miles?
+Answer:
+km = 10
+miles = km/1.609
+print(km,miles)
+2.Write a Python program to convert Celsius to Fahrenheit?
+c = 45
+f = (9*c/5)+32
+print("Celsius {},farenheit = {}",format(c,f))
