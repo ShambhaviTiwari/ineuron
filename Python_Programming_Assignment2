@@ -7,3 +7,24 @@ print(km,miles)
 c = 45
 f = (9*c/5)+32
 print("Celsius {},farenheit = {}",format(c,f))
+3. Write a Python program to display calendar?
+Answer:
+import calendar
+year = 2021
+month = 1
+print(calendar.month(year,month))
+print(calendar.calendar(year))
+
+4. Write a Python program to solve quadratic equation?
+Answer:
+import math
+d = (b**2) - (4*a*c)
+root1 = ((-1*b)+(math.sqrt(d))) / (2*a)
+root2 = ((-1*b)-(math.sqrt(d))) / (2*a)
+5. Write a Python program to swap two variables without temp variable?
+Answer:
+a = 8
+b = 10
+b = a+b
+a = b - a
+b = b - a
