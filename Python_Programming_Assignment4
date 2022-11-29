@@ -1,0 +1,8 @@
+1. Write a Python Program to Find the Factorial of a Number?
+Answer:
+fact = 1
+for i in range(num,1,-1):
+  fact = fact * i
+  
+ print(fact)
+ 
