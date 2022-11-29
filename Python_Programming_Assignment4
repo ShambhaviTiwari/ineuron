@@ -1,8 +1,12 @@
 1. Write a Python Program to Find the Factorial of a Number?
 Answer:
 fact = 1
-for i in range(num,1,-1):
+for i in range(num,0,-1):
   fact = fact * i
   
  print(fact)
  
+2. Write a Python Program to Display the multiplication Table?
+num = 9
+for i in range(1,10):
+  print(num*i)
