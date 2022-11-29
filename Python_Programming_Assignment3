@@ -1,0 +1,31 @@
+1. Write a Python Program to Check if a Number is Positive, Negative or Zero?
+Answer:
+num = 2
+if num == 0:
+  print('Number is zero')
+elif num > 0 :
+  print('Number is positive')
+else:
+  print('Number is negative')
+ 
+2. Write a Python Program to Check if a Number is Odd or Even?
+Answer:
+num = 9
+if num%2==0:
+  print('Number is even')
+else:
+  print('Number is odd')
+  
+  
+3. Write a Python Program to Check Leap Year?
+Answer:
+year = 2020
+if (((year%4 == 0) and (year%100 !=0)) or (year%400 == 0)) :
+  print('Year is a leap year')
+else:
+  print('Not a leap year')
+  
+ 4. Write a Python Program to Check Prime Number
+ num = int(input("Enter Number:"))
+ 
+
