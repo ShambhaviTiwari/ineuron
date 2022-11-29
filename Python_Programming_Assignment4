@@ -24,3 +24,17 @@ a = 0
           a = b 
           b = c
           return b
+4. Write a Python Program to Check Armstrong Number?        
+def arm_number(num):
+    temp = num
+    sum = 0
+    while temp>0:
+        digit = temp%10
+        sum = sum + (digit)**3
+        temp = temp//10
+    
+    if sum == num:
+        return 'armstrong number'
+    else:
+        return 'not' 
+print(arm_number(153))
