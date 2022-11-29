@@ -27,5 +27,13 @@ else:
   
  4. Write a Python Program to Check Prime Number
  num = int(input("Enter Number:"))
- 
+ for i in range(2,num):
+  count = 0
+  if num%i ==0:
+    count = count+1
+    
+ if count>2:
+  print('Prime')
+ else:
+  print('Not')
 
