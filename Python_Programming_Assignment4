@@ -12,8 +12,15 @@ for i in range(1,10):
   print(num*i)
 3. Write a Python Program to Print the Fibonacci sequence?
 Answer: num = int("Enter number"))
-
-for i in range(0,num):
-  c = a+b
-  a = b 
-  b = c
+a = 0
+    b = 1
+    if n==0:
+        return 0
+    elif n ==1:
+        return b
+     else:
+        for i in range(0,num):
+          c = a+b
+          a = b 
+          b = c
+          return b
