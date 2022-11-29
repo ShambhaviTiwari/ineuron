@@ -32,7 +32,17 @@ def arm_number(num):
         digit = temp%10
         sum = sum + (digit)**3
         temp = temp//10
-    
+5. Write a Python Program to Find Armstrong Number in an Interval?
+Answer:
+for i ian range(low ,high):
+  a = arm_number(i)
+  
+6) Write a Python Program to Find the Sum of Natural Numbers?
+Answer:
+s= 0
+for i in range(0,num):
+  s = s+i
+
     if sum == num:
         return 'armstrong number'
     else:
