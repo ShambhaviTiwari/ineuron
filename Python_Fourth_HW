@@ -17,15 +17,17 @@ df.fillna(value)
 Q9. How do you concatenate two Pandas DataFrames?
 df_final = pd.concat([df1,df2])
 Q10. How do you merge two Pandas DataFrames on a specific column?
-Answer:
+Answer: df1.merge(df2[['A','B']])
 Q11. How do you group data in a Pandas DataFrame by a specific column and apply an aggregation function?
-
+answer: df.groupby('A').agg(['sum'])
+or 
+df.groupby('A').sum()
 Q12. How do you pivot a Pandas DataFrame?
-
+Answer:df.pivot(index = '',columns = '',values = '')
 Q13. How do you change the data type of a column in a Pandas DataFrame?
-
+Answer: df= df['B'].astype(int)
 Q14. How do you sort a Pandas DataFrame by a specific column?
-
+df.sort_values(by = ['A'])
 Q15. How do you create a copy of a Pandas DataFrame?
 
 Q16. How do you filter rows of a Pandas DataFrame by multiple conditions?
