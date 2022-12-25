@@ -3,11 +3,11 @@ Answer: pandas/read_csv('path')
 Q2. How do you check the data type of a column in a Pandas DataFrame?
 Answer:df.dtypes
 Q3. How do you select rows from a Pandas DataFrame based on a condition?
-Answer: 
+Answer: df.loc[df['col']==cond]
 Q4. How do you rename columns in a Pandas DataFrame?
-
+Answer: df.rename(columns = {'a':'new_a'}
 Q5. How do you drop columns in a Pandas DataFrame?
-
+Answer:df.drop(['col'],axis=1)
 Q6. How do you find the unique values in a column of a Pandas DataFrame?
 
 Q7. How do you find the number of missing values in each column of a Pandas DataFrame?
