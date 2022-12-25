@@ -9,15 +9,15 @@ Answer: df.rename(columns = {'a':'new_a'}
 Q5. How do you drop columns in a Pandas DataFrame?
 Answer:df.drop(['col'],axis=1)
 Q6. How do you find the unique values in a column of a Pandas DataFrame?
-
+Answer: df['A'].unique()
 Q7. How do you find the number of missing values in each column of a Pandas DataFrame?
-
+Answer: df.isnull()
 Q8. How do you fill missing values in a Pandas DataFrame with a specific value?
-
+df.fillna(value)
 Q9. How do you concatenate two Pandas DataFrames?
-
+df_final = pd.concat([df1,df2])
 Q10. How do you merge two Pandas DataFrames on a specific column?
-
+Answer:
 Q11. How do you group data in a Pandas DataFrame by a specific column and apply an aggregation function?
 
 Q12. How do you pivot a Pandas DataFrame?
