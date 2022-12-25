@@ -29,7 +29,7 @@ Answer: df= df['B'].astype(int)
 Q14. How do you sort a Pandas DataFrame by a specific column?
 df.sort_values(by = ['A'])
 Q15. How do you create a copy of a Pandas DataFrame?
-
+Answer: df2 = df.copy()
 Q16. How do you filter rows of a Pandas DataFrame by multiple conditions?
 
 Q17. How do you calculate the mean of a column in a Pandas DataFrame?
