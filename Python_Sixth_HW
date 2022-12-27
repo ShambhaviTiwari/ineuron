@@ -1,0 +1,24 @@
+Scenario 1
+Answer 1: Option 1 - Pro Covers the possibility that even if one subject is taught by multiple instructors there is a chance that teachers will  individually teach that subject.
+Con - Multiple rows for one subject in instructor table.
+Option 2 - pro - no multiple columns for one subject in instructor table.
+con- enrollment count is not uniform
+Option 3- pro - Handles fact issue separately 
+Con - will have to make users aware for usage
+
+Answer 2: I would choose option 1 as it is uniform in the case of enrollment count and does not have 2 fact tables which would require to join multiple times thus making things slower.
+
+Answer 3 :No
+Answer 4 :No
+
+
+Scenario 2
+Question 5 : option 1 :wil miss out on old value but will have recent data
+
+Option 2 : will have recent data but will have too much data 
+Option 3  : extra table to join hence more memory,but a clear approach with respect to latest data.
+Option 4 : con same as above one but dimension se linked toh aur join.But clear approach wrt to all data
+
+Question 6 : SCD 1 option 1, cuz most updated value is essential 
+
+Question 7&8 : No
