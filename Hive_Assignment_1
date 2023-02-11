@@ -28,11 +28,20 @@ STORED AS ORC
 TBLPROPERTIES("skip.header.line.count"="1");
 
  INSERT INTO TABLE sales_order_orc  SELECT * FROM sales_order_csv;
+5)a. Calculatye total sales per year
+b. Find a product for which maximum orders were placed
+c. Calculate the total sales for each quarter
+d. In which quarter sales was minimum
+e. In which country sales was maximum and in which country sales was minimum
+f. Calculate quartelry sales for each city
+h. Find a month for each year in which maximum number of quantities were sold
 
 5) 
-a) select sum(sales),year_id  from sales_order_csv group by year_id;
-b) select productcode from sales_order_csv order by quantityordered desc limit 1;
-c) select sum(sales),qtr_id  from sales_order_csv group by qtr_id;
-d) select qtr_id from sales_order_csv order by sales asc limit 1;
-e)select country from sales_order_csv order by sales asc limit 1;
-select country from sales_order_csv order by sales desc limit 1;
+a) select sum(sales),year_id  from sales_order_orc group by year_id;
+b) select productcode from sales_order_orc order by quantityordered desc limit 1;
+c) select sum(sales),qtr_id  from sales_order_orc group by qtr_id;
+d) select qtr_id from sales_order_orc order by sales asc limit 1;
+e)select country from sales_order_orc order by sales asc limit 1;
+select country from sales_order_orc order by sales desc limit 1;
+f)  select sum(sales),qtr_id  from sales_order_orc group by city;
+h) select distinct month_id, year_id from sales_order_orc order by quantityordered desc limit 1;
