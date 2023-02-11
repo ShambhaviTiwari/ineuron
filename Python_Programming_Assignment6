@@ -38,3 +38,8 @@ SELECT DISTINCT CITY FROM STATION WHERE NOT (LEFT(CITY,1) IN ('A','E','I','O','U
 --mssql SELECT DISTINCT CITY FROM STATION WHERE CITY  LIKE '[^aeiouAEIOU]%[^aeiouAEIOU]';
 #QUESTION 16
 SELECT DISTINCT CITY FROM STATION WHERE NOT (LEFT(CITY,1) IN ('A','E','I','O','U') AND RIGHT(CITY,1) IN ('a','e','i','o','u')) ;
+#QUESTION 17
+SELECT product_id, product_name FROM Sales 
+LEFT JOIN Product USING(product_id)
+GROUP BY product_id
+HAVING MIN(sale_date) >= '2019-01-01' AND MAX(sale_date) <= '2019-03-31' ;
