@@ -48,3 +48,9 @@ HAVING MIN(sale_date) >= '2019-01-01' AND MAX(sale_date) <= '2019-03-31' ;
 SELECT DISTINCT(AUTHOR_ID) AS ID FROM VIEWS 
 WHERE AUTHOR_ID = VIEWER_ID
 ORDER BY AUTHOR_ID;
+#QUESTION 19
+select round(100*d2.immediate_orders/count(d1.delivery_id), 2) as immediate_percentage
+from Delivery d1,
+    (select count(order_date) as immediate_orders
+    from Delivery 
+    where (order_date = customer_pref_delivery_date)) d2
