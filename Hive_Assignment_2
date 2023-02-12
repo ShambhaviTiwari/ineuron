@@ -70,6 +70,17 @@ Create a Second  table ORDER(OID | DATE | CUSTOMER_ID | AMOUNT
 
 Now perform different joins operations on top of these tables
 (Inner JOIN, LEFT OUTER JOIN ,RIGHT OUTER JOIN ,FULL OUTER JOIN)
+Answer: Select * from Customers c inner join Order o 
+on c.id = o.customer_id
+
+Select * from Customers c left join Order o 
+on c.id = o.customer_id
+
+Select * from Customers c right join Order o 
+on c.id = o.customer_id
+
+Select * from Customers c full join Order o 
+on c.id = o.customer_id
 
 BUILD A DATA PIPELINE WITH HIVE
 
