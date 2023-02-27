@@ -43,7 +43,7 @@ LOAD DATA LOCAL INPATH ‘Home/country/state/’
 OVERWRITE INTO TABLE address;
 
 The following statement failed to execute. What can be the cause?
-Answer: Overwrite does not work with load data local inpath
+Answer: directory name should be: /home....
 8)Is it possible to add 100 nodes when we already have 100 nodes in Hive? If yes, how?
 By adding a new system and setting up new nodes.
 
@@ -121,20 +121,28 @@ Insert overwrite local directory '/workspace/AirQuality.csv' select * from AirQu
 Select CO(GT) ,Date from AirQuality group by Date;
 7. Perform filter operation at least 5 kinds of filter examples . 
 8. show and example of regex operation
+select regex_extract(Date,'11(.*)',8)
 9. alter table operation 
+Alter tabel AirQuality RENAME to AirQualityUCI
 10 . drop table operation
+Drop table AirQuality
 12 . order by operation . 
+select * from AirQuality order by Date;
 13 . where clause operations you have to perform . 
+select * from AirQuality where CO(GT) < 2;
 14 . sorting operation you have to perform . 
+select * from AirQuality order by Date;
 15 . distinct operation you have to perform . 
-16 . like an operation you have to perform . 
+select distinct(Date) from AirQuality;
+16 . like an operation you have to perform .
+select * from AirQuality where Date like '11-03-2004';
 17 . union operation you have to perform . 
+select distinct(Date) from AirQuality
+union
+select distinct(time) from AirQuality
 18 . table view operation you have to perform . 
-
-
-
-
-
+create view AirQualityview as
+select * from AirQuality;
 
 hive operation with python
 
