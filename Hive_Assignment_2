@@ -67,20 +67,23 @@ Hive Join operations
 Create a  table named CUSTOMERS(ID | NAME | AGE | ADDRESS   | SALARY)
 Create a Second  table ORDER(OID | DATE | CUSTOMER_ID | AMOUNT
 )
-
+Answer:
+create table CUSTOMERS(ID INT,NAME STRING,AGE INT,ADDRESS STRING,SALARY INT) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';
+Create table ORDER('OID' INT,'DATE' STRING',CUSTOMER_ID' INT,'AMOUNT' INT) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';
 Now perform different joins operations on top of these tables
 (Inner JOIN, LEFT OUTER JOIN ,RIGHT OUTER JOIN ,FULL OUTER JOIN)
 Answer: Select * from Customers c inner join Order o 
+on c.id = o.customer_id
+Select * from Customers c left outer join Order o 
+on c.id = o.customer_id
+Select * from Customers c right outer join Order o 
+on c.id = o.customer_id
+Select * from Customers c full outer join Order o 
 on c.id = o.customer_id
 
 Select * from Customers c left join Order o 
 on c.id = o.customer_id
 
-Select * from Customers c right join Order o 
-on c.id = o.customer_id
-
-Select * from Customers c full join Order o 
-on c.id = o.customer_id
 
 BUILD A DATA PIPELINE WITH HIVE
 
