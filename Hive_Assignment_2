@@ -116,7 +116,9 @@ LOAD DATA LOCAL INPATH 'file:///config/workspace/AirQualityUCI.csv' into table A
 set hive.cli.print.headers = true;
 select * from AirQuality;
 4. Fetch the result of the select operation in your local as a csv file . 
+Insert overwrite local directory '/workspace/AirQuality.csv' select * from AirQuality;
 5. Perform group by operation . 
+Select CO(GT) ,Date from AirQuality group by Date;
 7. Perform filter operation at least 5 kinds of filter examples . 
 8. show and example of regex operation
 9. alter table operation 
