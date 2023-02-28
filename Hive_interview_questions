@@ -57,7 +57,12 @@ It doesn't support subqueries.
 It has a high latency.
 Hive tables don't support delete or update operations.
 8. How to create a Database in HIVE?
+Create database DB;
 9. How to create a table in HIVE?
+Create table table_name(
+ID int,
+Name string
+);
 10.What do you mean by describe and describe extended and describe 
 formatted with respect to database and table
 11.How to skip header rows from a table in Hive?
