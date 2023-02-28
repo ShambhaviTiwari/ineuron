@@ -1,9 +1,20 @@
 1. What is the definition of Hive? What is the present version of Hive? 
+Answer:Apache Hive is a data warehousing service used for analytical queries, built on top of hadoop.
+Current version of Hive is 3.1.3 released on April 2022.
 2. Is Hive suitable to be used for OLTP systems? Why?
+Answer: No, as it does not support insert and updates (is a OLAP system).
 3. How is HIVE different from RDBMS? Does hive support ACID 
 transactions. If not then give the proper reason.
+Answer:RDBMS -
+Is used to maintain database,uses SQL,normalized data is stored,partitioning not supported.
+Hive-
+Datawarehose,uses HQL,normalized and un normalized both can be stored,partitioning supported.
+
+ACID properties:
+Can be enabled in hive for ORC file format of data.
 4. Explain the hive architecture and the different components of a Hive 
 architecture?
+Answer:
 5. Mention what Hive query processor does? And Mention what are the 
 components of a Hive query processor?
 6. What are the three different modes in which we can operate Hive?
