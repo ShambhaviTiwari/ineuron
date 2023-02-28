@@ -14,7 +14,20 @@ ACID properties:
 Can be enabled in hive for ORC file format of data.
 4. Explain the hive architecture and the different components of a Hive 
 architecture?
-Answer:
+Answer: Hive architecture has four main components, these main components also have sub components:
+Main and sub components-
+1) Hive client - 
+thrift client - can serve requests from thrift client, 
+JDBC client - for connection with Java APP,
+ODBC client - for connection with open database
+2) Hive service - Hive server 2 - enables clients to submit queries for execution,
+driver- creates session , 
+compliler - executes query(forms DAG), 
+optimizer - performs transformation of the DAG,
+metastore - stores metadata info.
+3) Processing and resource management - Map reduce and YARN
+4) Distributed storage - HDFS
+
 5. Mention what Hive query processor does? And Mention what are the 
 components of a Hive query processor?
 6. What are the three different modes in which we can operate Hive?
