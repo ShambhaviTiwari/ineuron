@@ -42,6 +42,9 @@ Hive Function Framework (ql/udf)
 Tools (ql/tools)
 Optimizer (ql/optimizer)
 6. What are the three different modes in which we can operate Hive?
+Answer: Local mode: In Hive local mode, Map Reduce jobs related to Hive run locally on a user machine. This is the default mode in which Hadoop uses local file system.
+Distributed Mode: In this mode, Hive as well as Hadoop is running in a fully distributed mode. NameNode, DataNode, JobTracker, TaskTracker etc run on different machines in this mode.
+Pseudo-distributed Mode: This is the mode used by developers to test the code before deploying to production. In this mode, all the daemons run on same virtual machine. With this mode, we can quickly write scripts and test on limited data sets.
 7. Features and Limitations of Hive.
 8. How to create a Database in HIVE?
 9. How to create a table in HIVE?
