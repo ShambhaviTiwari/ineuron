@@ -46,6 +46,16 @@ Answer: Local mode: In Hive local mode, Map Reduce jobs related to Hive run loca
 Distributed Mode: In this mode, Hive as well as Hadoop is running in a fully distributed mode. NameNode, DataNode, JobTracker, TaskTracker etc run on different machines in this mode.
 Pseudo-distributed Mode: This is the mode used by developers to test the code before deploying to production. In this mode, all the daemons run on same virtual machine. With this mode, we can quickly write scripts and test on limited data sets.
 7. Features and Limitations of Hive.
+Features:
+Scalable
+Fast
+Can process large datasets
+Processed data stored in hdfs and schema stored in DB.
+Limitations:
+Hive doesn't support OLTP. Hive supports Online Analytical Processing (OLAP), but not Online Transaction Processing (OLTP).
+It doesn't support subqueries.
+It has a high latency.
+Hive tables don't support delete or update operations.
 8. How to create a Database in HIVE?
 9. How to create a table in HIVE?
 10.What do you mean by describe and describe extended and describe 
