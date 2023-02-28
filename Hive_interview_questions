@@ -62,7 +62,8 @@ Create database DB;
 Create table table_name(
 ID int,
 Name string
-);
+) row format delimited
+fields terminated by ',';
 10.What do you mean by describe and describe extended and describe 
 formatted with respect to database and table
 11.How to skip header rows from a table in Hive?
