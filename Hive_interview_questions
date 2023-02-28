@@ -30,6 +30,17 @@ metastore - stores metadata info.
 
 5. Mention what Hive query processor does? And Mention what are the 
 components of a Hive query processor?
+Answer: Hive query processor creates a graph out the Sql like query written.
+Components:
+Parse and Semantic Analysis (ql/parse)
+Metadata Layer (ql/metadata)
+Type Interfaces (ql/typeinfo)
+Sessions (ql/session)
+Map/Reduce Execution Engine (ql/exec)
+Plan Components (ql/plan)
+Hive Function Framework (ql/udf)
+Tools (ql/tools)
+Optimizer (ql/optimizer)
 6. What are the three different modes in which we can operate Hive?
 7. Features and Limitations of Hive.
 8. How to create a Database in HIVE?
