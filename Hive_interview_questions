@@ -90,6 +90,12 @@ DML-
 select,insert
 15.Explain about SORT BY, ORDER BY, DISTRIBUTE BY and 
 CLUSTER BY in Hive.
+Answer: order by- ascending or descending sorting of data globally in one reducer.
+sort by - sorted data per reducer not globally sorted.
+distribute by - distribute the input rows among reducers acc to key
+clusterf by - distribute by + sort by 
+-> data partititoned in reducer  acc. to key
+-> data sorted in each reducer data acc. to key
 16.Difference between "Internal Table" and "External Table" and Mention 
 when to choose “Internal Table” and “External Table” in Hive?
 17.Where does the data of a Hive table get stored?
