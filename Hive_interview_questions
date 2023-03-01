@@ -76,6 +76,7 @@ Database-
 Describe: shows name of db,comments, root file location 
 Describe extended: shows name of db,comments, root file location , dbproperties
 11.How to skip header rows from a table in Hive?
+Answer: tblproperties("skip.header.line.count"="1");
 12.What is a hive operator? What are the different types of hive operators?
 13.Explain about the Hive Built-In Functions
 14. Write hive DDL and DML commands.
