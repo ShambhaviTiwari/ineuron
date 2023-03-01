@@ -66,6 +66,15 @@ Name string
 fields terminated by ',';
 10.What do you mean by describe and describe extended and describe 
 formatted with respect to database and table
+Answer: 
+Table-
+Describe: shows list of columns 
+Describe extended: shows list of columns,metadata of table 
+Describe formatted: shows list of columns,metadata of table in tabular format
+
+Database-
+Describe: shows name of db,comments, root file location 
+Describe extended: shows name of db,comments, root file location , dbproperties
 11.How to skip header rows from a table in Hive?
 12.What is a hive operator? What are the different types of hive operators?
 13.Explain about the Hive Built-In Functions
