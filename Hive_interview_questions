@@ -84,6 +84,10 @@ Relational,logical,arithmetic and complex.
 THey are similar to sql functions:
 round(a),double(a),ceil(a),rand(),concat(A,B)
 14. Write hive DDL and DML commands.
+DDL -
+create,alter,describe
+DML-
+select,insert
 15.Explain about SORT BY, ORDER BY, DISTRIBUTE BY and 
 CLUSTER BY in Hive.
 16.Difference between "Internal Table" and "External Table" and Mention 
