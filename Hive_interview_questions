@@ -78,7 +78,11 @@ Describe extended: shows name of db,comments, root file location , dbproperties
 11.How to skip header rows from a table in Hive?
 Answer: tblproperties("skip.header.line.count"="1");
 12.What is a hive operator? What are the different types of hive operators?
+Answer: hive operators are logic building blocks, 4 types are:
+Relational,logical,arithmetic and complex.
 13.Explain about the Hive Built-In Functions
+THey are similar to sql functions:
+round(a),double(a),ceil(a),rand(),concat(A,B)
 14. Write hive DDL and DML commands.
 15.Explain about SORT BY, ORDER BY, DISTRIBUTE BY and 
 CLUSTER BY in Hive.
