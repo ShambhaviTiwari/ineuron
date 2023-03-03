@@ -108,10 +108,15 @@ External table is like a pointer to data in external source.
 Use external table when you have data in an external source and you do not want data to be drop even after drop table.
 Use Internal table when you want Hive to manage data.
 17.Where does the data of a Hive table get stored?
+Data is stored in Data warehouse directory of Hive and metdata is store in metastore.
 18.Is it possible to change the default location of a managed table?
+Yes, you can change the location of a managed table by using the LOCATION '' syntax.
 19.What is a metastore in Hive? What is the default database provided by 
 Apache Hive for metastore?
+Answer: Metastore - saves metdata of table , like the no. of columns, partitions etc.
+default database provided by Apache Hive for metastore is derbyDB.
 20.Why does Hive not store metadata information in HDFS?
+Because Hive stores metadata in RDBMS and not in HDFS as RDBMS read/writes are faater.
 21.What is a partition in Hive? And Why do we perform partitioning in 
 Hive?
 22.What is the difference between dynamic partitioning and static 
