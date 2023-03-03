@@ -98,6 +98,15 @@ clusterf by - distribute by + sort by
 -> data sorted in each reducer data acc. to key
 16.Difference between "Internal Table" and "External Table" and Mention 
 when to choose “Internal Table” and “External Table” in Hive?
+Internal Table - Data stored in Hive's data warehouse 
+When dropping table both data and metadata are deleted
+Default table in Hive
+External Table - When you get data from HDFS or any external source
+When dropping the table only metdata is deleted
+External table is like a pointer to data in external source.
+
+Use external table when you have data in an external source and you do not want data to be drop even after drop table.
+Use Internal table when you want Hive to manage data.
 17.Where does the data of a Hive table get stored?
 18.Is it possible to change the default location of a managed table?
 19.What is a metastore in Hive? What is the default database provided by 
