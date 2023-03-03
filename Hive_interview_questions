@@ -119,6 +119,8 @@ default database provided by Apache Hive for metastore is derbyDB.
 Because Hive stores metadata in RDBMS and not in HDFS as RDBMS read/writes are faater.
 21.What is a partition in Hive? And Why do we perform partitioning in 
 Hive?
+Dividing the table in parts based on a column.
+This is done as the query time is fast as data in storedin slices.
 22.What is the difference between dynamic partitioning and static 
 partitioning?
 23.How do you check if a particular partition exists?
