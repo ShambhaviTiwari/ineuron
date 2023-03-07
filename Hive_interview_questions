@@ -123,9 +123,19 @@ Dividing the table in parts based on a column.
 This is done as the query time is fast as data in storedin slices.
 22.What is the difference between dynamic partitioning and static 
 partitioning?
+Dynamic partitioning: Not sure how many unique values in choosen partition column.
+Takes long time while loading data.
+eg: insert overwrite tablename partition(colname)
+Static Partitioning:value of partition column will be known to us.
+eg: insert overwrite tablename partition(colname = value)
 23.How do you check if a particular partition exists?
+Show partitions tablename
 24.How can you stop a partition form being queried?
+by using ENABLE OFFLINE at the end of alter table clause.
 25.Why do we need buckets? How Hive distributes the rows into buckets?
+Buckets help in decomposing the table into further manageable parts.
+Every bucket is stored as a file inside partition directory or the table directory.
+Hive distributes the rows into buckets usinh hash function.
 26.In Hive, how can you enable buckets?
 27.How does bucketing help in the faster execution of queries?
 28.How to optimise Hive Performance? Explain in very detail.
