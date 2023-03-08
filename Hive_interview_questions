@@ -146,6 +146,7 @@ As the shuffling and sorting job is done prior to any other queries , which help
 3)Use TEZ, allows unneccessary access to disk. set.hive.execution.engine = TEZ
 4) select columns only which are required.
 29. What is the use of Hcatalog?
+Hcatalog is a tool used to access hive metastore tables using pig,spark sql and other mapreduce apps.
 30. Explain about the different types of join in Hive.
 31.Is it possible to create a Cartesian join between 2 tables, using Hive?
 32.Explain the SMB Join in Hive?
