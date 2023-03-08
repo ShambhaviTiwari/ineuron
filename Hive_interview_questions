@@ -156,10 +156,17 @@ Used when the buckets in both tables are multiples of each other.
 Sort merge join
 As the name suggests it sorts teh data first in the reducers and then merges the data.
 31.Is it possible to create a Cartesian join between 2 tables, using Hive?
+Using join and putting the condition in where clause miogh help.
 32.Explain the SMB Join in Hive?
+Sort merge bucket  join
+As the name suggests it sorts teh data first in the reducers and then merges the data.
 33.What is the difference between order by and sort by which one we should 
 use?
+Order by in hive is the ordering at the global level of reducers
+whereas sort by is sorting loaclly in a reducer.
+To get complete ordering of data use order by.
 34.What is the usefulness of the DISTRIBUTED BY clause in Hive?
+
 35.How does data transfer happen from HDFS to Hive? 
 36.Wherever (Different Directory) I run the hive query, it creates a new 
 metastore_db, please explain the reason for it?
