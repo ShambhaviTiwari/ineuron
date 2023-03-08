@@ -148,6 +148,13 @@ As the shuffling and sorting job is done prior to any other queries , which help
 29. What is the use of Hcatalog?
 Hcatalog is a tool used to access hive metastore tables using pig,spark sql and other mapreduce apps.
 30. Explain about the different types of join in Hive.
+Brodcast join - every reducer has one of the tables entire copy which joins with the other table, this is done only when one of the table is small.
+No reducers need to be used in this as no shuffling.
+Bucket map join - Used when both the tables have buckets from the same column and join is done on those buckets
+Used when there are large tables
+Used when the buckets in both tables are multiples of each other.
+Sort merge join
+As the name suggests it sorts teh data first in the reducers and then merges the data.
 31.Is it possible to create a Cartesian join between 2 tables, using Hive?
 32.Explain the SMB Join in Hive?
 33.What is the difference between order by and sort by which one we should 
