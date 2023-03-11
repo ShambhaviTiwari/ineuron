@@ -166,7 +166,7 @@ Order by in hive is the ordering at the global level of reducers
 whereas sort by is sorting loaclly in a reducer.
 To get complete ordering of data use order by.
 34.What is the usefulness of the DISTRIBUTED BY clause in Hive?
-
+Distributed by is used Hive to distribute data to reducers according to the column mentioned.
 35.How does data transfer happen from HDFS to Hive? 
 36.Wherever (Different Directory) I run the hive query, it creates a new 
 metastore_db, please explain the reason for it?
