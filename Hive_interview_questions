@@ -180,6 +180,7 @@ jdbc:derby:;databaseName=metastore_db;create=true
 37.What will happen in case you have not issued the command: ‘SET 
 hive.enforce.bucketing=true;’ before bucketing a table in Hive?
 38.Can a table be renamed in Hive?
+Yes, by using the ALTER command.
 39.Write a query to insert a new column(new_col INT) into a hive table at a 
 position before an existing column (x_col)
 40.What is serde operation in HIVE?
