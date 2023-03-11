@@ -168,6 +168,8 @@ To get complete ordering of data use order by.
 34.What is the usefulness of the DISTRIBUTED BY clause in Hive?
 Distributed by is used Hive to distribute data to reducers according to the column mentioned.
 35.How does data transfer happen from HDFS to Hive? 
+data for tables is stored in hdfs or hive's data warehouse directory.
+If you have data in hdfs then create a table in hive with the schema in orc format then you will be able to read.
 36.Wherever (Different Directory) I run the hive query, it creates a new 
 metastore_db, please explain the reason for it?
 37.What will happen in case you have not issued the command: ‘SET 
