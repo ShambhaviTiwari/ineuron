@@ -172,6 +172,11 @@ data for tables is stored in hdfs or hive's data warehouse directory.
 If you have data in hdfs then create a table in hive with the schema in orc format then you will be able to read.
 36.Wherever (Different Directory) I run the hive query, it creates a new 
 metastore_db, please explain the reason for it?
+Hive checks first that whether the metastore db is created or not and by default the property is set to create it.
+You will have to change that in the configuration file , the property being:
+javax.jdo.option.ConnectionURL
+with the default value:
+jdbc:derby:;databaseName=metastore_db;create=true
 37.What will happen in case you have not issued the command: ‘SET 
 hive.enforce.bucketing=true;’ before bucketing a table in Hive?
 38.Can a table be renamed in Hive?
