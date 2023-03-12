@@ -179,12 +179,22 @@ with the default value:
 jdbc:derby:;databaseName=metastore_db;create=true
 37.What will happen in case you have not issued the command: ‘SET 
 hive.enforce.bucketing=true;’ before bucketing a table in Hive?
+If this is not done the number of files in the table directory will not be equal to the number of buckets.
 38.Can a table be renamed in Hive?
 Yes, by using the ALTER command.
 39.Write a query to insert a new column(new_col INT) into a hive table at a 
 position before an existing column (x_col)
+Alter table tablename
+change column new_col INT
+before old_col;
 40.What is serde operation in HIVE?
+Serde- Serialization and deserilization.
+Serde allows reading of data in hive , in a table and writing it back to hdfs.
 41.Explain how Hive Deserializes and serialises the data?
+Serilization - converting youribject/ data into bytes
+Deserilization - converting your data in bytes to object
+Rowformat syntax - describes the libraries for conversion.
+Stored as- tells the input and output format for mapreduce.
 42.Write the name of the built-in serde in hive.
 43.What is the need of custom Serde?
 44.Can you write the name of a complex data type(collection data types) in 
