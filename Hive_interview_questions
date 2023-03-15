@@ -236,8 +236,12 @@ Insert overwwrite table emp select * from stage_emp;
 54.What is the maximum size of a string data type supported by Hive? 
 Nothing like this is there in hive.
 Explain how Hive supports binary formats.
+Binary format is array of bytes and it is stored in the records not in BLOBs.
 55. What File Formats and Applications Does Hive Support?
+File formats supported: ORC,Parquet,CSV,textfile.
+Applications: supports all client apps written in java,php,python,ruby,c++
 56.How do ORC format tables help Hive to enhance its performance?
+ORC helps in querying faster as it reduces the data size upto 75%(compressed)
 57.How can Hive avoid mapreduce while processing the query?
 58.What is view and indexing in hive?
 59.Can the name of a view be the same as the name of a hive table?
