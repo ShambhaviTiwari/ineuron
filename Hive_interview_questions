@@ -196,17 +196,34 @@ Deserilization - converting your data in bytes to object
 Rowformat syntax - describes the libraries for conversion.
 Stored as- tells the input and output format for mapreduce.
 42.Write the name of the built-in serde in hive.
+Built in serde's in Hive:
+File format classes-
+TextInputFormat/HiveIgnoreKeyTextOutputFormat: It reads/writes data in plain text file format.
+SequenceFileInputFormat/SequenceFileOutput: It reads/writes data in Hadoop SequenceFile format.
+Similarly there is for CSV,thrift and other formats.
 43.What is the need of custom Serde?
+Custom serde: Required if users want to read their own data format they will have to write their own desiralizer.
 44.Can you write the name of a complex data type(collection data types) in 
 Hive?
+Array,Map,struct
 45.Can hive queries be executed from script files? How?
+Yes,using the source command.
+eg: source <path to hql file>
 46.What are the default record and field delimiter used for hive text files?
+Default record delimiter is : -\n
+Field Delimiters: -\001,\002
 47.How do you list all databases in Hive whose name starts with s?
+Show databases like 's*';
 48.What is the difference between LIKE and RLIKE operators in Hive?
+LIKE: used to search for string in similar text.
+RLIKE : If substring A is RLIKE'd with B then if B has value containing A it will be true.
 49.How to change the column data type in Hive?
+ALTER TABLE table_name CHANGE column_name column_name new_datatype; 
 50.How will you convert the string ’51.2’ to a float value in the particular 
 column?
+cast ('51.2' as float)
 51.What will be the result when you cast ‘abc’ (string) as INT?
+error will occur
 52.What does the following query do?
 a. INSERT OVERWRITE TABLE employees
 b. PARTITION (country, state)
