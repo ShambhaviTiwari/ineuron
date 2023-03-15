@@ -229,9 +229,12 @@ a. INSERT OVERWRITE TABLE employees
 b. PARTITION (country, state)
 c. SELECT ..., se.cnty, se.st
 d. FROM staged_employees se;
+Partitioned employees table using country and state and data inserted from staged_employees table.
 53.Write a query where you can overwrite data in a new table from the 
 existing table.
+Insert overwwrite table emp select * from stage_emp;
 54.What is the maximum size of a string data type supported by Hive? 
+Nothing like this is there in hive.
 Explain how Hive supports binary formats.
 55. What File Formats and Applications Does Hive Support?
 56.How do ORC format tables help Hive to enhance its performance?
