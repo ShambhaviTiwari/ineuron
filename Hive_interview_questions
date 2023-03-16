@@ -243,6 +243,7 @@ Applications: supports all client apps written in java,php,python,ruby,c++
 56.How do ORC format tables help Hive to enhance its performance?
 ORC helps in querying faster as it reduces the data size upto 75%(compressed)
 57.How can Hive avoid mapreduce while processing the query?
+setting the hive.exec.local.auto property to true.
 58.What is view and indexing in hive?
 59.Can the name of a view be the same as the name of a hive table?
 60.What types of costs are associated in creating indexes on hive tables?
