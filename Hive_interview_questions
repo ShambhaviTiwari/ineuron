@@ -265,21 +265,54 @@ Thrift Client,JDBC driver and ODBC Driver
 66.Can the default location of a managed table be changed in Hive?
 ya, by giving LOCATION ''
 67.What is the Hive ObjectInspector function?
+Group of APIs to inspect value in different data representation.
 68.What is UDF in Hive?
+user defined function
 69.Write a query to extract data from hdfs to hive.
+load data inpath 'path' into table table_name
 70.What is TextInputFormat and SequenceFileInputFormat in hive.
+SequenceFileInputFormat - It is the type of flatfile which consists of binary key value pairs.
+ combines small files and stores it as a large file
+ TextInputFormat - It can load csv types of files.
 71.How can you prevent a large job from running for a long time in a hive?
+By setting hive.mapred.mode = strict. In this mapreduce exceutes in strict mode.
 72.When do we use explode in Hive?
+When you want to expand nested array.
 73.Can Hive process any type of data formats? Why? Explain in very detail
+Hive supports only textfile,sequencefile,ORC and recordfile .
 74.Whenever we run a Hive query, a new metastore_db is created. Why?
+property is set to auto create.
+You will have to change that in the configuration file , the property being:
+javax.jdo.option.ConnectionURL
+with the default value:
+jdbc:derby:;databaseName=metastore_db;create=true
 75.Can we change the data type of a column in a hive table? Write a 
 complete query.
+ALTER TABLE table_name CHANGE column_name column_name new_datatype; 
 76.While loading data into a hive table using the LOAD DATA clause, how 
 do you specify it is a hdfs file and not a local file ?
+for local: load data local inpath ''
+for hdfs: load data inpath ''
 77.What is the precedence order in Hive configuration?
+Hive set command
+CMD line
+hive-site.xml
+hive-default.xml
+hadoop-site.xml
+hadoop-site.xml
 78.Which interface is used for accessing the Hive metastore?
+WebHcat API
 79.Is it possible to compress json in the Hive external table ?
+you can using Gzip
 80.What is the difference between local and remote metastores?
+local - metastore Runs with JVM (in which hive runs)
+remote- metastore Runs ona different machine than JVM (in which hive runs)
 81.What is the purpose of archiving tables in Hive?
+You can archive files to reduce the number of partition files 
 82.What is DBPROPERTY in Hive?
+Mentions details about the database built by user.
 83.Differentiate between local mode and MapReduce mode in Hive
+Mapreduce - queries exceuted on Hadoop cluster
+Local - queries executed on same single machine,without need of hadoop cluster
+
+(but this answer is for pig not hive, so doubt)
