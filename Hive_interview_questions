@@ -261,7 +261,7 @@ As this is equivalent to a fetch task and reading the entire file usingh hadoop 
 Explodes array to multiple rows.
 65. What is the available mechanism for connecting applications when we 
 run Hive as a server?
-Thrift Client
+Thrift Client,JDBC driver and ODBC Driver
 66.Can the default location of a managed table be changed in Hive?
 67.What is the Hive ObjectInspector function?
 68.What is UDF in Hive?
