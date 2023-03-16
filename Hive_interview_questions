@@ -263,6 +263,7 @@ Explodes array to multiple rows.
 run Hive as a server?
 Thrift Client,JDBC driver and ODBC Driver
 66.Can the default location of a managed table be changed in Hive?
+ya, by giving LOCATION ''
 67.What is the Hive ObjectInspector function?
 68.What is UDF in Hive?
 69.Write a query to extract data from hdfs to hive.
