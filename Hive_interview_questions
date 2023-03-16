@@ -245,14 +245,23 @@ ORC helps in querying faster as it reduces the data size upto 75%(compressed)
 57.How can Hive avoid mapreduce while processing the query?
 setting the hive.exec.local.auto property to true.
 58.What is view and indexing in hive?
+View are like the ones in SQL, yes you can create a view on a select statement.It is like a snapshot of the columns and dat you need.
+Indexes are the pointers to columns in certain tables.
 59.Can the name of a view be the same as the name of a hive table?
+No, view and table cannot have the same name.
 60.What types of costs are associated in creating indexes on hive tables?
+A processing cost is their while creating indexes as values in the columns need to be arranged on which the indexes are created.
 61.Give the command to see the indexes on a table.
+SHOW INDEX ON TABLE_NAME;
 62. Explain the process to access subdirectories recursively in Hive queries.
+set mapred.input.dir.recursive = true
 63.If you run a select * query in Hive, why doesn't it run MapReduce?
+As this is equivalent to a fetch task and reading the entire file usingh hadoop command.
 64.What are the uses of Hive Explode?
+Explodes array to multiple rows.
 65. What is the available mechanism for connecting applications when we 
 run Hive as a server?
+Thrift Client
 66.Can the default location of a managed table be changed in Hive?
 67.What is the Hive ObjectInspector function?
 68.What is UDF in Hive?
